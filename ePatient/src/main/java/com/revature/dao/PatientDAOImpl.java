@@ -1,9 +1,12 @@
 package com.revature.dao;
 
+import org.springframework.stereotype.Repository;
+
 import com.revature.model.Appointment;
 import com.revature.model.Person;
 import com.revature.model.Prescription;
 
+@Repository("PatientDAOImpl")
 public class PatientDAOImpl implements PatientDAO {
 
 	@Override
