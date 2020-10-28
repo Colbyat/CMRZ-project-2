@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class PatientServiceTest {
 
-	@Test
+	@Test 
 	void testCreateAppointmentSuccess() {
 		fail("Not yet implemented");
 	}
