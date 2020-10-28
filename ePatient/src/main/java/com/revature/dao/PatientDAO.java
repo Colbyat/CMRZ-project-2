@@ -6,11 +6,11 @@ import com.revature.model.Prescription;
 
 public interface PatientDAO {
 
-	public boolean createAppointment(String patientId, Appointment a);
-	public boolean createRefillRequest(String patientId, String perscriptionId);
-	public Person getPatientInfo(String patientId);
-	public Prescription getPersciptionInfo(String prescriptionId);
-	public Appointment getAppointmentInfo(String appointmentId);
+	public boolean createAppointment(int patientId, Appointment a);
+	public boolean createRefillRequest(int patientId, int perscriptionId);
+	public Person getPatientInfo(int patientId);
+	public Prescription getPersciptionInfo(int prescriptionId);
+	public Appointment getAppointmentInfo(int appointmentId);
 	public boolean updatePatientInfo(Person patient);
 	
 }
