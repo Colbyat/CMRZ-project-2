@@ -22,7 +22,7 @@ public class HibernateSessionFactory {
 
 			// read properties from file
 			FileReader fr = null;
-			String filePath = "/home/ec2-user/.auth/connection.prop";
+			String filePath = "~/.auth/connection.prop";
 
 			try {
 				fr = new FileReader(filePath);
@@ -66,9 +66,9 @@ public class HibernateSessionFactory {
 			*/
 
 			sessionFactory = new Configuration().configure()
-					.setProperty("hibernate.connection.url", auth.getProperty("url"))
-					.setProperty("hibernate.connection.username", auth.getProperty("user"))
-					.setProperty("hibernate.connection.password", auth.getProperty("password"))
+					.setProperty("hibernate.connection.url", "jdbc:postgresql://epatient.cku8xrcflipx.us-west-2.rds.amazonaws.com/"/*auth.getProperty("url")*/)
+					.setProperty("hibernate.connection.username", "postgres"/*auth.getProperty("user")*/)
+					.setProperty("hibernate.connection.password", "*CMRZ3334"/*auth.getProperty("password")*/)
 					.buildSessionFactory();
 		}
 		return sessionFactory.getCurrentSession();
