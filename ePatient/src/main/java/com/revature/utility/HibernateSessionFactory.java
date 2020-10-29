@@ -16,7 +16,7 @@ public class HibernateSessionFactory {
 
 	public static Session getSession() {
 		if (sessionFactory == null) {
-
+/*
 			// property obj to hold our connection info
 			Properties auth = new Properties();
 
@@ -59,6 +59,7 @@ public class HibernateSessionFactory {
 					e.printStackTrace();
 				}
 			}
+*/
 			/*
 			System.out.println(auth.getProperty("url"));
 			System.out.println(auth.getProperty("user"));
