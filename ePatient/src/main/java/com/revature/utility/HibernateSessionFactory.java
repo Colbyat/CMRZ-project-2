@@ -22,7 +22,7 @@ public class HibernateSessionFactory {
 
 			// read properties from file
 			FileReader fr = null;
-			String filePath = "~/.auth/connection.prop";
+			String filePath = "/home/ec2-user/.auth/connection.prop";
 
 			try {
 				fr = new FileReader(filePath);
