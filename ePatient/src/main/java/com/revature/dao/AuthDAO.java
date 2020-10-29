@@ -4,6 +4,6 @@ import com.revature.model.Person;
 
 public interface AuthDAO {
 
-	public Person login(String username, String password);
+	public int login(String username, String password);
 	
 }

@@ -1,4 +1,4 @@
-package com.revature.test;
+package com.revature.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class PatientServiceTest {
 
-	@Test
+	@Test 
 	void testCreateAppointmentSuccess() {
 		fail("Not yet implemented");
 	}

@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS authTable(
 	personID int UNIQUE NOT NULL,
 	username varchar(50) UNIQUE NOT NULL,
 	password varchar(64) NOT NULL,
-	PRIMARY KEY (personID),
+	PRIMARY KEY (username),
 	FOREIGN KEY(personID) REFERENCES person(personID)
 );
 
