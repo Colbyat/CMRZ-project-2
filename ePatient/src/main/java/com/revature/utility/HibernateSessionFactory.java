@@ -22,7 +22,7 @@ public class HibernateSessionFactory {
 
 			// read properties from file
 			FileReader fr = null;
-			String filePath = "R:\\Revature\\9-21-2020-jwa\\Project Submissions\\project 1\\.ignore\\.auth\\connection.prop";
+			String filePath = "~/.auth/connection.prop";
 
 			try {
 				fr = new FileReader(filePath);
