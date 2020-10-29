@@ -6,6 +6,10 @@ import org.hibernate.cfg.Configuration;
 
 public class HibernateSessionFactory
 {
+	private static final String USERNAME = GetAuth.property.getProperty("user");
+	private static final String PASSWORD = GetAuth.property.getProperty("password");
+	private static final String URL = GetAuth.property.getProperty("url");
+
     private static SessionFactory sessionFactory;
 	
     public static Session getSession() 
@@ -13,9 +17,9 @@ public class HibernateSessionFactory
 	if(sessionFactory == null) 
 	{
 		sessionFactory = new Configuration().configure()
-			.setProperty("hibernate.connection.url", System.getenv("dburl")) 
-			.setProperty("hibernate.connection.username", System.getenv("dbusername"))
-			.setProperty("hibernate.connection.password", System.getenv("dbpassword"))
+			.setProperty("hibernate.connection.url", URL) 
+			.setProperty("hibernate.connection.username", USERNAME)
+			.setProperty("hibernate.connection.password", PASSWORD)
 			.buildSessionFactory();
 	}
 		
